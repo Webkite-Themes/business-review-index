@@ -638,7 +638,7 @@
     content: ", "; }
   #webkite-results td ul .zip + .country:before {
     content: ", "; }
-  #webkite-results td ul .state + .zip {
+  #webkite-results td ul .state + .zip:before {
     content: " "; }
 #webkite-results .review-date, #webkite-results .review-link {
   font: 400 .857em/1 "Open Sans"; }

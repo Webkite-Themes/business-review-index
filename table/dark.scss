@@ -157,7 +157,7 @@ $colorVariant:dark;
     .city + .country:before{content: ", ";}
     .state + .country:before{content: ", ";}
     .zip + .country:before{content: ", ";}
-    .state + .zip{content: " ";}
+    .state + .zip:before{content: " ";}
     }
 		.review-date, .review-link{	font: 400 .857em/1 "Open Sans";}
 		.review-date{
