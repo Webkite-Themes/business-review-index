@@ -3,22 +3,24 @@
 {{>header}}
 
 {{#if items.length}}
-  {{#with items}}
-    <table>
-      <thead class="until-xs">
-        <tr>
-          <th class="image-thumbnail"></th>
-          <th class="webkite-name webkite-apply-sort">
-            {{#if (contains ../sort.sortableFacets "Name")}}
-              <a href="#" data-sort="Name" class="{{../../currentDirection}}">Name</a>
+  <table>
+    <thead class="until-xs">
+      <tr>
+        <th class="image-thumbnail"></th>
+        <th class="webkite-name webkite-apply-sort">
+          {{#facet name="Name"}}
+            {{#if sortable}}
+              <a href="#" data-sort="{{name}}"{{#if (equals name ../../sort.currentSort)}} class="{{#with ../../../sort}}{{currentDirection}}{{/with}}"{{/if}}>{{displayName}}</a>
             {{else}}
-              <span>Name</span>
+              <span>{{displayName}}</span>
             {{/if}}
-          </th>
-          <th class="webkite-review until-xs"><span>Review</span></th>
-          <th class="open-toggle"></th>
-        </tr>
-      </thead>
+          {{/facet}}
+        </th>
+        <th class="webkite-review until-xs"><span>Review</span></th>
+        <th class="open-toggle"></th>
+      </tr>
+    </thead>
+    {{#with items}}
       {{#each this}}
         <tbody>
           <tr class="webkite-result">      

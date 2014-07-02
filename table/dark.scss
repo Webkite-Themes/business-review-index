@@ -136,9 +136,7 @@ $colorVariant:dark;
       display: inline-block;
       height: 5px;
       width: 10px;
-      position: absolute;
-      top: $mainGutter/2;
-      left: $mainGutter/2;
+      margin:0 4px 2px -14px;
       }
     &.asc:before{background-position: 0 0;}
     &.desc:before{background-position: 0 -5px;}
