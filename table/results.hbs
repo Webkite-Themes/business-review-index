@@ -16,7 +16,7 @@
             {{/if}}
           {{/facet}}
         </th>
-        <th class="webkite-review until-xs"><span>Review</span></th>
+        <th class="webkite-review until-xs"><span>{{t "Review" default="Review"}}</span></th>
         <th class="open-toggle"></th>
       </tr>
     </thead>
@@ -55,7 +55,7 @@
                 {{/any}}
                 {{#facet name="Review URL"}}
                   <li>
-                    <span class="review-link"><a href="{{displayValue}}">go to full review »</a></span>
+                    <span class="review-link"><a href="{{displayValue}}" target="_blank">{{t "go to full review" default="go to full review"}} »</a></span>
                   </li>
                 {{/facet}}
               </ul>
