@@ -9,7 +9,9 @@
   <table>
     <thead class="until-xs">
       <tr>
-        <th class="image-thumbnail"></th>
+        {{#unless (find facets name="Image URL" empty=true)}}
+          <th class="image-thumbnail"></th>
+        {{/unless}}
         <th class="webkite-name webkite-apply-sort">
           {{#facet name="Name"}}
             {{#if sortable}}
@@ -26,10 +28,12 @@
     {{#with items}}
       {{#each this}}
         <tbody>
-          <tr class="webkite-result">      
-            <td class="image-thumbnail until-xs">
-              {{#facet name="Image URL"}}<div class="image-thumbnail" style="background-image:url({{displayValue}});"></div>{{/facet}}
-            </td>
+          <tr class="webkite-result">
+            {{#unless (find ../../facets name="Image URL" empty=true)}}
+              <td class="image-thumbnail until-xs">
+                {{#facet name="Image URL"}}<div class="image-thumbnail" style="background-image:url({{displayValue}});"></div>{{/facet}}
+              </td>
+            {{/unless}}
             <td class="webkite-name">
               <ul>
                 {{#facet name="Name"}}
@@ -70,9 +74,28 @@
               {{/any}}
             </td>
           </tr>
-          {{#any (find facets name="Street Address") (find facets name="City") (find facets name="State") (find facets name="Zip Code") (find facets name="Country") (find facets name="Phone Number") (find facets name="Website") (find facets name="Category") (find facets name="Price") (find facets name="Rating")}}
-            <tr id="{{this.id}}" class="webkite-item-details">{{>result-details}}</tr>
-          {{/any}}
+          
+          {{#if (find ../../facets name="Image URL" empty=true)}}
+            {{#any (find facets name="Street Address") (find facets name="City") (find facets name="State") (find facets name="Zip Code") (find facets name="Country") (find facets name="Phone Number") (find facets name="Website") (find facets name="Category") (find facets name="Price") (find facets name="Rating")}}
+              <tr id="{{this.id}}" class="webkite-item-details">
+                <td class="webkite-name until-xs"></td>
+                <td colspan="2">
+                  {{>result-details}}
+                </td>
+              </tr>
+            {{/any}}
+          {{else}}
+            {{#any (find facets name="Street Address") (find facets name="City") (find facets name="State") (find facets name="Zip Code") (find facets name="Country") (find facets name="Phone Number") (find facets name="Website") (find facets name="Category") (find facets name="Price") (find facets name="Rating")}}
+              <tr id="{{this.id}}" class="webkite-item-details">
+                <td class="image-thumbnail until-xs"></td>
+                <td class="webkite-name until-xs"></td>
+                <td colspan="2">
+                  {{>result-details}}
+                </td>
+              </tr>
+            {{/any}}
+          {{/if}}   
+                 
         </tbody>
       {{/each}}
     </table>

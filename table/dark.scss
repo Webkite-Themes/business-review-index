@@ -64,9 +64,6 @@ $colorVariant:dark;
     line-height: 1em;
     padding: $mainGutter/2;
     vertical-align: top;
-    &.open-toggle{vertical-align: middle;}
-    &.webkite-name{max-width: 10em;}
-    &.webkite-review{max-width: 20em;}
     }
   th{
     color: $lightOpacity;
@@ -80,8 +77,10 @@ $colorVariant:dark;
       }
     }
   td a{
-    &.webkite-website{@include ellipsisThis;}
-    &.webkite-website{max-width: 20em;}
+    &.webkite-website{
+      @include ellipsisThis;
+      max-width: 100%;
+      }
     }
     a.more-button, a.less-button{
       background: url("open-close.png");
@@ -114,21 +113,31 @@ $colorVariant:dark;
   tbody tr{
     height: 4.375em;
     }
+
   div.image-thumbnail{
     @include roundedUp(.188em);
     background-position: center center;
     background-size: cover;
     display: block;
-    margin: $mainGutter/2;
-    height: 3.125em;
-    width: 3.125em;
+    height: 50px;
+    width: 50px;
     }
-  th.image-thumbnail, td.image-thumbnail{padding: 0; width: 70px;}
-  th.open-toggle, td.open-toggle{
-    padding: 0;
+  th.image-thumbnail,
+  td.image-thumbnail{
+    width: 70px;
+    }
+  th.webkite-name,
+  td.webkite-name{
+    width: 28%;
+    }
+
+  th.open-toggle, 
+  td.open-toggle{
+    vertical-align:middle;
     text-align: center;
-    width: 2.375em;
+    width: 40px;
     }
+
   th.webkite-apply-sort a{
     &.asc:before, &.desc:before{
       background: url("sort-direction.png") no-repeat;
@@ -141,6 +150,7 @@ $colorVariant:dark;
     &.asc:before{background-position: 0 0;}
     &.desc:before{background-position: 0 -5px;}
     }
+    
   td ul{
   	font-size: .875em;
     li{width: 100%;}
@@ -171,17 +181,11 @@ $colorVariant:dark;
   
   .webkite-item-details{
     position: relative;
-    ul, div{
+    ul{
       @include boxedUp;
       display: inline-block;
       vertical-align: top;
-      &.sixty{max-width: 63%; width: 63%; float: right;}
-      }
-      img{
-      @include roundedUp(.325em);
-      width: 100%;
-      max-width: 100%; height: auto;
-      margin-bottom: $mainGutter;
+      width:100%;
       }
       li{line-height: 1.2em;padding-bottom: 1.25em;}
       b, span.facet-values{display: inline-block; width: 49%; vertical-align: top;}
@@ -281,23 +285,29 @@ $colorVariant:dark;
 /************************************** ELEMENT QUERIES */
 
 #webkite-results.xs{
-  .webkite-item-details{ul.forty, ul.sixty{max-width:100%;width: 100%; padding-left: 0;}}
-  .forty li, .sixty li{
+  .webkite-item-details ul{max-width:100%;width: 100%; padding-left: 0;}
+  .webkite-item-details li{
     width: 100%;
     b, .facet-values{width: 100%;}
     .webkite-toggle{width: auto;}
     }
-  .forty .inline-filter-menu li a, .sixty .inline-filter-menu li a{
+  .webkite-item-details .inline-filter-menu li a {
     max-width: 100%;
     width: auto;
     }
   .webkite-name{border: none;}
-  .webkite-name{li{margin-bottom: $mainGutter/2;width: 100%;}}
-   td a.webkite-website{max-width: 10em;}
+  .webkite-name{
+    width:100%;
+    li{
+      margin-bottom: $mainGutter/2;
+      width: 100%;
+      }
+    }
+ 	td a.webkite-website{max-width: 200px;}
   }
   
 #webkite-results.sm{
-  .forty li, .sixty li{
+  .webkite-item-details li{
     width: 100%;
     b, .facet-values{width: 100%;}
     .webkite-toggle{width: auto;}
@@ -306,13 +316,13 @@ $colorVariant:dark;
     li{margin-bottom: $mainGutter/2;}
     }
   .webkite-name{
-    max-width: 8em;
+    width: 35%;
     h2{line-height: 1.2em;}
     }
     td{vertical-align: top; &.open-toggle{vertical-align: middle;}}
     th.image-thumbnail, td.image-thumbnail{width: 45px;}
-    div.image-thumbnail{width: 1.563em; height: 1.563em;}
-    td a.webkite-website{max-width: 15em;}
+    div.image-thumbnail{width: 25px; height: 25px;}
+    td a.webkite-website{max-width: 100%;}
   }
   
 /***************************************  DISPLAY RULES */
