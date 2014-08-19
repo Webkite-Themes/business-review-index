@@ -2,6 +2,8 @@ theme:
   name: business-review-index-table
   
 settings:
+  embeddable:
+    true
   pagination:
     - 10
     - 25
