@@ -79,7 +79,7 @@ $colorVariant:light;
   td a{
     &.webkite-website{
       @include ellipsisThis;
-      max-width: 100%;
+      max-width: 200px;
       }
     }
     a.more-button, a.less-button{
@@ -322,7 +322,7 @@ $colorVariant:light;
     td{vertical-align: top; &.open-toggle{vertical-align: middle;}}
     th.image-thumbnail, td.image-thumbnail{width: 45px;}
     div.image-thumbnail{width: 25px; height: 25px;}
-    td a.webkite-website{max-width: 100%;}
+    td a.webkite-website{max-width: 200px;}
   }
   
 /***************************************  DISPLAY RULES */

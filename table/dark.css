@@ -614,7 +614,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 100%; }
+  max-width: 200px; }
 #webkite-results a.more-button, #webkite-results a.less-button {
   background: url("open-close.png");
   display: inline-block;
@@ -855,7 +855,7 @@
   width: 25px;
   height: 25px; }
 #webkite-results.sm td a.webkite-website {
-  max-width: 100%; }
+  max-width: 200px; }
 
 /***************************************  DISPLAY RULES */
 #webkite-results.xs .until-xs, #webkite-results.xs .until-sm, #webkite-results.xs .sm-only, #webkite-results.xs .md-only, #webkite-results.xs .lg-only {
