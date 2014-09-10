@@ -5,12 +5,12 @@ $themeName:business-review-index-table;
 @import '../globals/universals';
 
 /* RESET */
-#webkite-results.#{$themeName}{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}{
   @include resetThings;
   }
 
 /****************************************** BEGIN STYLES */
-#webkite-results.#{$themeName}{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}{
   background: $backgroundColor;
   border: 1px solid $lighterOpacity;
   @include roundedUp(.625em);
@@ -28,7 +28,7 @@ $themeName:business-review-index-table;
   }
   
 /* TYPOGRAPHY */
-#webkite-results.#{$themeName}{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}{
   h2{
     color: $medOpacity;
     display: inline-block;
@@ -44,7 +44,7 @@ $themeName:business-review-index-table;
 @include universalStyles;
   
 /********************************************** BLOCKS */
-#webkite-results.#{$themeName}{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}{
 
   table{
     border: 0 none;
@@ -103,7 +103,7 @@ $themeName:business-review-index-table;
  } 
 
 /************************************ TABLE RESULTS */
-#webkite-results.#{$themeName}{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}{
   
   tbody:nth-child(odd){
     background: $lighterevenstillOpacity;
@@ -178,7 +178,7 @@ $themeName:business-review-index-table;
   }
   
 /************************************ TABLE ITEM DETAILS */ 
-#webkite-results.#{$themeName}{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}{
   
   .webkite-item-details{
     position: relative;
@@ -201,7 +201,7 @@ $themeName:business-review-index-table;
   }
 
 /************************************** INLINE FILTERS */
-#webkite-results.#{$themeName}{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}{
 
   .sixty li b, td li b{
     position: relative;
@@ -270,7 +270,7 @@ $themeName:business-review-index-table;
 }
 
 /******************************************* NO RESULTS */
-#webkite-results.#{$themeName}{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}{
   
   .webkite-no-results{
     padding: $mainGutter 0;
@@ -285,7 +285,7 @@ $themeName:business-review-index-table;
 
 /************************************** ELEMENT QUERIES */
 
-#webkite-results.#{$themeName}.xs{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}.xs{
   .webkite-item-details ul{max-width:100%;width: 100%; padding-left: 0;}
   .webkite-item-details li{
     width: 100%;
@@ -307,7 +307,7 @@ $themeName:business-review-index-table;
  	td a.webkite-website{max-width: 200px;}
   }
   
-#webkite-results.#{$themeName}.sm{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}.sm{
   .webkite-item-details li{
     width: 100%;
     b, .facet-values{width: 100%;}
@@ -327,24 +327,24 @@ $themeName:business-review-index-table;
   }
   
 /***************************************  DISPLAY RULES */
-#webkite-results.#{$themeName}.xs{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}.xs{
   .until-xs, .until-sm, .sm-only, .md-only, .lg-only{display: none;}
   .xs-only, .webkite-results-header .xs-only{display: inline-block; width: 100%;}
   td.xs-only, th.xs-only{display: table-cell;}
   }
-#webkite-results.#{$themeName}.sm{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}.sm{
   .until-sm, .xs-only, .md-only, .lg-only{display: none;}
   .sm-only{display: inline-block;}
   td.sm-only, th.sm-only{display: table-cell;}
   }
-#webkite-results.#{$themeName}, #webkite-results.#{$themeName}.md, #webkite-results.#{$themeName}.xl{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}, #webkite-results.#{$themeName}.webkite-#{$colorVariant}.md, #webkite-results.#{$themeName}.webkite-#{$colorVariant}.xl{
   .until-md, .xs-only, .sm-only, .lg-only{display: none;}
   .webkite-results-header .xs-only{display: none;}
   .md-only{display: inline-block;}
   td.md-only, th.md-only{display: table-cell;}
   th span.md-only{line-height: 1;}
   }
-#webkite-results.#{$themeName}.lg{
+#webkite-results.#{$themeName}.webkite-#{$colorVariant}.lg{
   .until-lg, .xs-only, .sm-only, .md-only{display: none;}
   .lg-only{display: inline-block;}
   td.lg-only, th.lg-only{display: table-cell;}
