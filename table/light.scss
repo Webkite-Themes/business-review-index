@@ -104,7 +104,9 @@ $themeName:business-review-index-table;
 
 /************************************ TABLE RESULTS */
 #webkite-results.#{$themeName}.webkite-#{$colorVariant}{
-  
+  tbody {
+    -webkit-backface-visibility: hidden;
+    }
   tbody:nth-child(odd){
     background: $lighterthanlightestOpacity;
     }
@@ -181,7 +183,7 @@ $themeName:business-review-index-table;
 #webkite-results.#{$themeName}.webkite-#{$colorVariant}{
   
   .webkite-item-details{
-    position: relative;
+    height:auto;
     ul{
       @include boxedUp;
       display: inline-block;

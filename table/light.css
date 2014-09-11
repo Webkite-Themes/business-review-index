@@ -641,6 +641,8 @@
     background-position: -18px -36px; }
 
 /************************************ TABLE RESULTS */
+#webkite-results.business-review-index-table.webkite-light tbody {
+  -webkit-backface-visibility: hidden; }
 #webkite-results.business-review-index-table.webkite-light tbody:nth-child(odd) {
   background: rgba(0, 0, 0, 0.04); }
 #webkite-results.business-review-index-table.webkite-light tbody:nth-child(even) {
@@ -711,7 +713,7 @@
 
 /************************************ TABLE ITEM DETAILS */
 #webkite-results.business-review-index-table.webkite-light .webkite-item-details {
-  position: relative; }
+  height: auto; }
   #webkite-results.business-review-index-table.webkite-light .webkite-item-details ul {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
