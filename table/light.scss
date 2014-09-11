@@ -21,6 +21,7 @@ $themeName:business-review-index-table;
   max-width: 43.75em;
   margin: 0 auto;
   padding: $mainGutter;
+  -webkit-backface-visibility: hidden;
   a{color:$linkColor;
       text-decoration: none; 
     &:hover{color: $linkHover;}

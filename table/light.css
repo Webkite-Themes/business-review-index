@@ -68,7 +68,8 @@
   font: 400 16px/normal "Open Sans";
   max-width: 43.75em;
   margin: 0 auto;
-  padding: 20px; }
+  padding: 20px;
+  -webkit-backface-visibility: hidden; }
   #webkite-results.business-review-index-table.webkite-light a {
     color: #1b9cd2;
     text-decoration: none; }
