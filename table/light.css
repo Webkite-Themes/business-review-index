@@ -550,36 +550,36 @@
     -moz-appearance: textfield; }
 
 /************************************** ELEMENT QUERIES */
-#webkite-results.xs.business-review-index-table .webkite-branding-area, #webkite-results.xs.business-review-index-table .webkite-pagination-area {
+#webkite-results.xs.business-review-index-table.webkite-light .webkite-branding-area, #webkite-results.xs.business-review-index-table.webkite-light .webkite-pagination-area {
   width: 100%;
   padding: 0;
   margin: 0;
   text-align: center; }
-#webkite-results.xs.business-review-index-table .webkite-filter-area, #webkite-results.xs.business-review-index-table .webkite-sort-area, #webkite-results.xs.business-review-index-table .webkite-sort-area > .webkite-toggle {
+#webkite-results.xs.business-review-index-table.webkite-light .webkite-filter-area, #webkite-results.xs.business-review-index-table.webkite-light .webkite-sort-area, #webkite-results.xs.business-review-index-table.webkite-light .webkite-sort-area > .webkite-toggle {
   width: 100%; }
-#webkite-results.xs.business-review-index-table .sort-menu {
+#webkite-results.xs.business-review-index-table.webkite-light .sort-menu {
   width: 95%; }
-#webkite-results.xs.business-review-index-table .webkite-sort-area + .webkite-filter-area {
+#webkite-results.xs.business-review-index-table.webkite-light .webkite-sort-area + .webkite-filter-area {
   margin-top: 20px; }
-#webkite-results.xs.business-review-index-table .webkite-filter-area, #webkite-results.xs.business-review-index-table .webkite-sort-area + .webkite-filter-area {
+#webkite-results.xs.business-review-index-table.webkite-light .webkite-filter-area, #webkite-results.xs.business-review-index-table.webkite-light .webkite-sort-area + .webkite-filter-area {
   margin-left: 0;
   padding-left: 0; }
-#webkite-results.xs.business-review-index-table .webkite-branding-area + .webkite-pagination-area {
+#webkite-results.xs.business-review-index-table.webkite-light .webkite-branding-area + .webkite-pagination-area {
   margin-top: 20px; }
-#webkite-results.xs.business-review-index-table .webkite-dataset-name {
+#webkite-results.xs.business-review-index-table.webkite-light .webkite-dataset-name {
   text-align: center;
   font-size: 20px; }
-#webkite-results.xs.business-review-index-table .webkite-embed-wrapper .webkite-embed-show {
+#webkite-results.xs.business-review-index-table.webkite-light .webkite-embed-wrapper .webkite-embed-show {
   display: block;
   text-align: center; }
 
-#webkite-results.sm.business-review-index-table .webkite-filter-area, #webkite-results.sm.business-review-index-table .webkite-sort-area, #webkite-results.sm.business-review-index-table .webkite-sort-area > .webkite-toggle {
+#webkite-results.sm.business-review-index-table.webkite-light .webkite-filter-area, #webkite-results.sm.business-review-index-table.webkite-light .webkite-sort-area, #webkite-results.sm.business-review-index-table.webkite-light .webkite-sort-area > .webkite-toggle {
   width: 100%; }
-#webkite-results.sm.business-review-index-table .sort-menu {
+#webkite-results.sm.business-review-index-table.webkite-light .sort-menu {
   width: 95%; }
-#webkite-results.sm.business-review-index-table .webkite-sort-area + .webkite-filter-area {
+#webkite-results.sm.business-review-index-table.webkite-light .webkite-sort-area + .webkite-filter-area {
   margin-top: 20px; }
-#webkite-results.sm.business-review-index-table .webkite-filter-area, #webkite-results.sm.business-review-index-table .webkite-sort-area + .webkite-filter-area {
+#webkite-results.sm.business-review-index-table.webkite-light .webkite-filter-area, #webkite-results.sm.business-review-index-table.webkite-light .webkite-sort-area + .webkite-filter-area {
   margin-left: 0;
   padding-left: 0; }
 
