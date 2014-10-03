@@ -85,6 +85,11 @@
 #webkite-results.business-review-index-table.webkite-light p, #webkite-results.business-review-index-table.webkite-light li {
   color: rgba(0, 0, 0, 0.6); }
 
+/******************************************** GENERAL */
+#webkite-results.business-review-index-table.webkite-light {
+  text-align: left;
+  direction: ltr; }
+
 /******************************************** NAVIGATIONALS */
 #webkite-results.business-review-index-table.webkite-light .webkite-results-header, #webkite-results.business-review-index-table.webkite-light .webkite-results-footer {
   text-align: justify;
